@@ -14,6 +14,7 @@ default: build
 
 SOURCE = src/ApolloSM/ApolloSM.cpp
 
+# -undefined dynamic_lookup is needed for MacOS to ignore missing symbols
 CXX_FLAGS = -O3 -Wall -shared -std=c++11 -fPIC -undefined dynamic_lookup ${INCLUDE_PATH}
 
 build:
