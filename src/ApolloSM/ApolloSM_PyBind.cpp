@@ -1,6 +1,5 @@
 #include <pybind11/pybind11.h>
-
-#include "ApolloSM/ApolloSM.hh"
+#include <ApolloSM/ApolloSM.hh>
 
 /*
  * Python binding for the ApolloSM class.

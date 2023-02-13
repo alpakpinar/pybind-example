@@ -1,4 +1,4 @@
-#include "ApolloSM/ApolloSM.hh"
+#include <ApolloSM/ApolloSM.hh>
 
 ApolloSM::ApolloSM(const std::string & identifier) :
     identifier(identifier)
