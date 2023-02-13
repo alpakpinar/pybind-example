@@ -21,3 +21,12 @@ And after that, you can import the `ApolloSM` class when you launch Python CLI f
 >>> sm.GetIdentifier()
 'SM208'
 ```
+
+Or alternatively, try out executing the `test.py` script via `python3 test.py`. You should see an output like:
+
+```
+Instantiated an ApolloSM: <ApolloSM.ApolloSM object at 0x109fac570>
+Current identifier: SM209
+Setting identifier to: SM208
+Current identifier: SM208
+```
