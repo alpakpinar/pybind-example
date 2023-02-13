@@ -12,7 +12,7 @@ INCLUDE_PATH = \
 
 default: build
 
-SOURCE = src/ApolloSM/ApolloSM.cpp
+SOURCES = $(wildcard src/ApolloSM/*cpp)
 
 CXX_FLAGS = -O3 -Wall -shared -std=c++11 -fPIC ${INCLUDE_PATH}
 
@@ -22,4 +22,4 @@ ifeq ($(shell uname -s),Darwin)
 endif
 
 build:
-	${CXX} ${CXX_FLAGS} ${SOURCE} -o ApolloSM${PYTHON3_EXTENSION_SUFFIX}
+	${CXX} ${CXX_FLAGS} ${SOURCES} -o ApolloSM${PYTHON3_EXTENSION_SUFFIX}
